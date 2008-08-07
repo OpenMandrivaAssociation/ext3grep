@@ -1,7 +1,7 @@
 
 Name:		ext3grep
 Version:	0.6.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Investigation and recovery tool for ext3 filesystem
 Group:		File tools
 License:	GPLv2+
