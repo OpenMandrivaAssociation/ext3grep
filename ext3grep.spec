@@ -1,7 +1,7 @@
 
 Name:		ext3grep
-Version:	0.6.0
-Release:	%mkrel 3
+Version:	0.9.0
+Release:	%mkrel 1
 Summary:	Investigation and recovery tool for ext3 filesystem
 Group:		File tools
 License:	GPLv2+
@@ -18,11 +18,17 @@ possibly recover it.
 %setup -q
 
 %build
+# http://code.google.com/p/ext3grep/issues/detail?id=14
+export CXX=%{_bindir}/g++
+
 %configure2_5x
 %make
 
 %install
 rm -rf %{buildroot}
+
+# Builds twice unless setting it here as well:
+export CXX=%{_bindir}/g++
 %makeinstall_std
 
 %clean
