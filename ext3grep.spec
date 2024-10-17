@@ -4,7 +4,7 @@ Release:	2
 Summary:	Investigation and recovery tool for ext3 filesystem
 Group:		File tools
 License:	GPLv2+
-URL:		http://code.google.com/p/ext3grep/
+URL:		https://code.google.com/p/ext3grep/
 Source0:	http://ext3grep.googlecode.com/files/ext3grep-%version.tar.gz
 BuildRequires:	ext2fs-devel
 Patch0:		ext3grep-0.10.1-gcc44.patch
