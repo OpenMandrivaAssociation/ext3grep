@@ -6,6 +6,11 @@ Group:		File tools
 License:	GPLv2+
 URL:		https://code.google.com/p/ext3grep/
 Source0:	http://ext3grep.googlecode.com/files/ext3grep-%version.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ext2fs-devel
 Patch0:		ext3grep-0.10.1-gcc44.patch
 Patch1:		ext3grep-0.10.2-include-unistd_h-for-sysconf.patch
